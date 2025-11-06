@@ -1,0 +1,5 @@
+package interfa;
+public interface Animal {
+		int  a= 5;
+		public void run();//ONLY DECLARATION ALLOWED IN INTERFACE
+}

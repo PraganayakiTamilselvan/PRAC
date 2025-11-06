@@ -1,0 +1,8 @@
+package interfa;
+
+public class Cus2 extends SBI{
+public static void main(String[] args) {
+	Cus2  x = new Cus2();
+	
+}
+}

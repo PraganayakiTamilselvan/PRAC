@@ -1,0 +1,17 @@
+package task;
+
+import java.util.ArrayList;
+
+public class L {
+	public static void main(String[] args) {
+		Employee e1= new Employee();
+		e1.setName("Pragana");
+		e1.setId(1);
+		Employee e2= new Employee();
+		e2.setName("Praga");
+		e2.setId(1);
+		ArrayList<Employee> a = new ArrayList<Employee>();
+		
+		
+	}
+}

@@ -1,0 +1,21 @@
+package task;
+
+public class surname extends Name{
+	@Override
+	public void animal() {
+		System.out.println("Im dog");	
+	}
+//	public void color() {
+//		System.out.println("blue");
+//	}
+	public void sleep() {
+		System.out.println("sleep");
+	}
+	public static void main(String[] args) {
+		Name d = new surname();
+		d.animal();
+		d.color();
+		d.person();
+	}
+
+}

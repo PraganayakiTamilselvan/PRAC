@@ -1,0 +1,21 @@
+package com.example;
+
+import java.util.Scanner;
+
+public class Prod {
+	int pnumb;
+	String  pname;
+	int price;
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		Prod p =new Prod();
+		System.out.println("Enter Product number:");
+		p.pnumb = sc.nextInt();
+		System.out.println("Enter Product name:");
+		p.pname=sc.next();
+		System.out.println("Enter the Price");
+		p.price=sc.nextInt();
+	}
+	
+}
+

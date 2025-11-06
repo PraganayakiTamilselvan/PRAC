@@ -1,0 +1,6 @@
+package interfa;
+
+public interface bird {
+	public void eat();
+	public void fly();
+}

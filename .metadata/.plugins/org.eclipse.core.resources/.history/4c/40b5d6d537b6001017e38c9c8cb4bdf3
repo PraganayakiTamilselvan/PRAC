@@ -1,0 +1,16 @@
+package PACK1;
+public class a {
+			a()
+			{
+				System.out.println("cat ");
+			}
+			void eat() {
+				System.out.println("Sleep");
+			}
+			void eat(int i) {
+				System.out.print(i);
+			}
+			public static void main(String[] args) {
+				new a().eat();
+			}
+}

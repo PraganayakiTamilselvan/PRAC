@@ -1,0 +1,10 @@
+package interfa;
+
+public class SBI implements loan{
+
+	public void interestRate(int amt) {
+		// TODO Auto-generated method stub
+		System.out.println("SBI interset rate :"+amt*20/100);
+	}
+
+}

@@ -1,0 +1,50 @@
+package com.example;
+import java.util.*;
+class A{
+	A(){
+		System.out.println("hello im A");
+	}
+	A(int v){
+		System.out.println("Im first");
+	}
+}
+public class Arr extends A{
+	Arr(){
+		super(4);
+		System.out.println("Im 2nd");
+	}
+	Arr (int v){
+		super(v);
+		System.out.println(v);
+	}
+	public static void main(String[] args) {
+		new Arr();
+	}
+		
+	}
+/*	for (int i = 0; i < 5; i++) {  //----------------HOLLOW SQUARE
+		    for (int j = 0; j < 5; j++) {
+		        if (i == 0 || i == 4 || j == 0 || j == 4) {
+		            System.out.print("*");
+		        } else {
+		            System.out.print("  ");
+		        }
+		    }
+	    System.out.println();
+}*/
+	
+/*			for(int i=0;i<=5;i++) {//--------------------------RIGHT TRIANGLE
+				for(int j=0;j<i;j++) {
+					System.out.print("*");
+				}
+				System.out.println();
+		}*/
+		/*for(int i=5;i>=0;i--) //-------------------------------INVERTED RIGHT TRIANGLE
+			for(int j=0;j<i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}*/	
+		
+
+

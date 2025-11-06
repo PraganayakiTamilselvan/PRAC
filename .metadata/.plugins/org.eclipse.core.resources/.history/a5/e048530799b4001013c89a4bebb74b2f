@@ -1,0 +1,40 @@
+package com.example;
+
+import java.util.Scanner;
+
+public class Main {
+	//instance variable
+	/*int a = 4;
+	void eat() {
+		System.out.println("Eatting");
+	}
+	public static void main(String[] args) {
+		Main n = new Main();//create object for the main
+		System.out.println("a");
+		n.eat();
+	}*/
+
+		
+/*		System.out.println("Enter your name");
+ 		String s=sc.next();
+		String name=sc.nextLine();
+		System.out.println("Hi "+name+" Welcome to UST Global");
+*/
+		/*System.out.println("Enter a number:");
+		int a=sc.nextInt();
+		System.out.println("Enter another number");
+		int b=sc.nextInt();
+		System.out.println("The addition of "+a+" and "+b+" is "+(a+b));*/
+		static int b = 4;
+		public static void main(String[] args) {
+			Main n = new Main();
+			Main m = new Main();
+			n.b+=1000;
+			System.out.println("First Object "+n.b);
+
+			System.out.println("Second Object "+m.b);
+
+		}
+		
+		
+	}

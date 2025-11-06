@@ -1,0 +1,41 @@
+package interfa;
+
+public class theatre3 implements Malayalam,Tamil{
+
+	@Override
+	public void Three() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sms() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Ghili() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Ayak() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Premam() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void June() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

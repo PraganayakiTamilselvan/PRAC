@@ -1,0 +1,24 @@
+package interfa;
+
+public class theatre2 implements Tamil
+{
+
+	@Override
+	public void Three() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void sms() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void Ghili() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

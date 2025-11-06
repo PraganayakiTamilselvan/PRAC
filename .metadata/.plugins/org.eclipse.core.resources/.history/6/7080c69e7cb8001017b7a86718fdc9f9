@@ -1,0 +1,16 @@
+package prana;
+
+public class Tiger implements Animal {
+
+	@Override
+	public void eat() {
+		// TODO Auto-generated method stub
+		System.out.println("Tiger can eat");
+	}
+	public static void main(String[] args) {
+		Tiger t =new Tiger();
+		t.eat();
+		System.out.println("It has more legs"a++);
+	}
+
+}

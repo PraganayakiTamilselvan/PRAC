@@ -1,0 +1,23 @@
+package interfa;
+
+public class Bat implements Animal,bird {
+	public static void main(String[] args) {
+		bird b = () -> System.out.println("Bird eats insect");
+		b.eat(); // This will print: Bird eats insect;
+		
+		
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void eat() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

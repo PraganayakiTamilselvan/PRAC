@@ -1,0 +1,8 @@
+package interfa;
+
+public class Monkey extends Tiger implements Animal{
+public void eat() {
+//	super.eat();
+	System.out.println("Im monkey ");
+}
+}

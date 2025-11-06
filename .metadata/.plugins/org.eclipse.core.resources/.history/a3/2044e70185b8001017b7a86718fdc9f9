@@ -1,0 +1,8 @@
+package interfa;
+
+public class cust1 extends theatre1{
+	public static void main(String[] args) {
+		cust1 c =new cust1();
+		c.Ayak(250);
+	}
+}

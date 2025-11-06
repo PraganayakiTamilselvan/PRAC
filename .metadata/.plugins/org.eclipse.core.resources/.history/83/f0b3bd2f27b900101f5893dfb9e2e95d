@@ -1,0 +1,28 @@
+package interfa;
+
+public class theatre2 implements Tamil
+{
+
+	@Override
+	public void Three() {
+		// TODO Auto-generated method stub
+		System.out.println("Three Ticket price : 320");
+	}
+
+	@Override
+	public void sms() {
+		// TODO Auto-generated method stub
+		System.out.println("sms Ticket price:230");
+	}
+
+	@Override
+	public void Ghili() {
+		// TODO Auto-generated method stub
+		System.out.println("Ghilli Ticket price:180");
+	}
+	public static void main(String[] args) {
+		Tamil t = new theatre2();
+		
+	}
+
+}

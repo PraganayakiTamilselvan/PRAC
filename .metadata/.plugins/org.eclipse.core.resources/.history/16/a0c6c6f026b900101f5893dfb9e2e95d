@@ -1,0 +1,11 @@
+package interfa;
+
+public class cust2 extends theatre2{
+	public static void main(String[] args) {
+		cust2 c2 =new cust2();
+		c2.Three();
+		c2.sms();
+		c2.Ghili();
+	}
+
+}

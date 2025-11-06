@@ -1,0 +1,22 @@
+package PACK1;
+public class a {
+			private int y;
+			a()
+			{
+				this(7);
+				System.out.println("cat ");			
+			}
+			a(int y){
+				System.out.println(y);
+			}
+			void eat() {
+				System.out.println("Sleep");
+			}
+			void eat(int i) {
+				System.out.print(i);
+			}
+			public static void main(String[] args) {
+				new a();
+				
+			}
+}

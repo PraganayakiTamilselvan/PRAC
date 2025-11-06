@@ -1,0 +1,13 @@
+package PACK1;
+
+public class a {
+	public static void main(String[] args) {
+		int n=4;			
+		String rem=" ";
+		while(n!=0) {
+			rem = (n % 2) + rem;
+			n=n/2;
+}
+	}
+	
+}

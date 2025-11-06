@@ -1,0 +1,6 @@
+package interfa;
+public interface Malayalam {
+public void Ayak(int n);
+public void Premam(int n);
+public void June(int n);
+}

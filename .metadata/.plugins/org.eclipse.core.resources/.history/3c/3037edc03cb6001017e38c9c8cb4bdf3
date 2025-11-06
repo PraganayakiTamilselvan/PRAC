@@ -1,0 +1,19 @@
+package PACK1;
+public class a {
+			int x=20000;
+			void bal(){
+				System.out.println("Account balance:"+ this.x );
+			}
+			void withdraw(int x) {
+				int w = x-this.x;
+				System.out.println("Withdrawn amount:"+x);
+				System.out.println("Balance:"+x);
+			}
+			public static void main(String[] args) {
+				a b =new a();
+				b.bal();
+				
+				
+			}
+
+}

@@ -1,0 +1,11 @@
+package interfa;
+
+public class SBI implements loan{
+
+	@Override
+	public void interestRate(int amt) {
+		// TODO Auto-generated method stub
+		System.out.println(amt*20/100);
+	}
+
+}

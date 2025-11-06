@@ -1,0 +1,13 @@
+import java.util.*;
+public class Li {
+public static void main(String[] args) {
+	ArrayList<Integer> a = new ArrayList<Integer>();
+	a.add(4);
+	a.add(9);
+	a.add(6);
+	System.out.println(a);
+	a.forEach(x -> System.out.println(x));
+	//a.forEach(System.out::println);	
+	Iterator it = a.iterator();
+}
+}

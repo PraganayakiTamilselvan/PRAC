@@ -1,0 +1,5 @@
+package prana;
+public interface Animal {
+		int  a= 5;
+		public void eat();//ONLY DECLARATION ALLOWED IN INTERFACE
+}

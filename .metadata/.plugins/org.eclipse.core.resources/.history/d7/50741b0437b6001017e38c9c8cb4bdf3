@@ -1,0 +1,17 @@
+package PACK1;
+
+import java.util.Scanner;
+public class a {
+		public static void main(String[] args) {
+			first:
+				for(int i=0;i<5;i++) {
+						second:
+							for(int j=0;j<5;j++) {
+								if(j==4) {
+									break first;
+								}
+							}
+							
+				}
+		}
+}

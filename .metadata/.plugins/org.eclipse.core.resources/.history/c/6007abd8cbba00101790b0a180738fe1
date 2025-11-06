@@ -1,0 +1,11 @@
+package interfa;
+
+public class Bat {
+	public static void main(String[] args) {
+		bird b = () -> System.out.println("Bird eats insect");
+		b.eat(); // This will print: Bird eats insect;
+		
+		
+	}
+
+}

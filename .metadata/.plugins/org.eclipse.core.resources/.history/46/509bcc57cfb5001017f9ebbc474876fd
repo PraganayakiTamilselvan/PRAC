@@ -1,0 +1,12 @@
+package PACK1.subpack;
+
+import PACK1.Cal;
+
+public class Ab  extend Cal{
+		public static void main(String[] args) {
+			Cal c =new Cal();
+			c.sub(4, 0);
+		}
+	}
+
+	

@@ -1,0 +1,11 @@
+package task;
+
+public class Customer extends Hotel{
+	public void display() {
+		System.out.println("Customer Info");
+	}
+	public static void main(String[] args) {
+	Veg   c =new Customer ();
+		c.Idly();
+	}
+}

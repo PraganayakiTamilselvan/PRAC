@@ -1,0 +1,79 @@
+package com.example;
+public class Main extends Oops{
+	public static void main(String[] args) {
+		Main m= new Main();
+		m.program();
+	}
+	//instance variable---->changes in particular mentioned object value
+	/*int a = 4;
+	void eat() {
+		System.out.println("Eatting");
+	}
+	public static void main(String[] args) {
+		Main n = new Main();//create object for the main
+		System.out.println("a");
+		n.eat();
+	}*/
+	
+/*		System.out.println("Enter your name");
+ 		String s=sc.next();
+		String name=sc.nextLine();
+		System.out.println("Hi "+name+" Welcome to UST Global");
+*/
+		/*System.out.println("Enter a number:");
+		int a=sc.nextInt();
+		System.out.println("Enter another number");
+		int b=sc.nextInt();
+		System.out.println("The addition of "+a+" and "+b+" is "+(a+b));*/
+	
+	//static variable --> changes to all object
+	/*
+		static int b = 4;
+		public static void main(String[] args) {
+			Main n = new Main();
+			Main m = new Main();
+			n.b+=1000;
+			System.out.println("First Object "+n.b);
+
+			System.out.println("Second Object "+m.b);
+
+		}
+	*/
+	/*
+	static void add(int x,int y) {
+		System.out.println(x+y);
+	}
+	static int power(int x) {
+		return x*x;
+	}
+	public static void main(String[] args) {
+		add(12,23);
+		int result=power(5);
+		System.out.println(result);
+		
+	}
+	*/
+	/*
+	public static void main(String[] args) {
+		System.out.println(args[2]);
+	}*/
+	/* SWING BASIC CONCEPT
+	 public static void main(String[] args) {
+		String n =JOptionPane.showInputDialog("Hello im pragana");
+		JOptionPane.showMessageDialog(null, "heyy");	
+	}*/
+	// ODD or EVEN 
+	/*public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		System.out.println(a%2==0 ? "Even" : "Odd");
+		
+	}*/
+	/*public static void main(String[] args) {
+		int a = Integer.parseInt(args[0]);
+		int sq = a*a;
+		System.out.println(sq);
+	}*/
+	
+	}
+	

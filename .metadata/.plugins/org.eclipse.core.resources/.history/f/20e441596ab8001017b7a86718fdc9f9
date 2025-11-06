@@ -1,0 +1,18 @@
+package com.example;
+
+import java.util.Scanner;
+
+public class Prod {
+	
+	void Prod(){
+		this.Prod(7);
+		System.out.println("cryyyyyyyyyyy");
+	}
+	int Prod(int a) {
+		return a;
+	}
+	public static void main(String[] args) {
+		
+	}
+}
+

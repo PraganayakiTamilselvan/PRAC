@@ -1,0 +1,10 @@
+package PACK1;
+public class a {
+			a()
+			{
+				System.out.println("cat ");
+			}
+			public static void main(String[] args) {
+				a i = new a();
+			}
+}

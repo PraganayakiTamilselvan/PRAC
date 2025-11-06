@@ -1,0 +1,10 @@
+package interfa;
+
+public class ICIC implements loan{
+
+	@Override
+	public void interestRate(int amt) {
+		System.out.println("ICIC amount interest  :"+amt*10/100);		
+	}
+
+}

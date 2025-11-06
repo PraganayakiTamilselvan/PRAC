@@ -1,0 +1,16 @@
+import java.util.*;
+public class Li {
+public static void main(String[] args) {
+	LinkedList a =new LinkedList();
+	a.add(4);
+	a.add("Pragana");
+	a.add(6);
+	a.pop();
+	a.add("Pragana");
+	a.push("hello");
+	System.out.println(a);
+	
+	System.out.println(a.contains(6));
+	System.out.println(a.size());
+}
+}

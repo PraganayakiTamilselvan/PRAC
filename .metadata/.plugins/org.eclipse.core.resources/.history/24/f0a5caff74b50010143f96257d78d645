@@ -1,0 +1,25 @@
+package outer;
+
+import java.util.Scanner;
+
+import PACK1.Cal;
+
+public class bc {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s="Welcome";
+		int a =0;
+		s=s.toLowerCase();
+		for(int i=0;i<s.length();i++) {
+			int count=0;
+			for(int j=1;j<s.length();j++) {
+				if (s.charAt(i)==s.charAt(j)){
+					count++;
+				}
+			}
+			a+=count;
+			System.out.println('c'+ count);
+		}
+		
+	}
+}

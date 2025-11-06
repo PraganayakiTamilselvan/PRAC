@@ -1,0 +1,42 @@
+package com.example;
+import java.util.*;
+public class Arr {
+	public static void main(String[] args) {
+		 int n=57;
+			int d;
+			int rem=0;
+			while(n>8) {
+	         rem=n/8;
+				d=n%8;
+				rem=(rem*10)+d;
+				n=n/8;
+			}
+			System.out.println(rem);
+	}
+}
+/*	for (int i = 0; i < 5; i++) {  //----------------HOLLOW SQUARE
+		    for (int j = 0; j < 5; j++) {
+		        if (i == 0 || i == 4 || j == 0 || j == 4) {
+		            System.out.print("*");
+		        } else {
+		            System.out.print("  ");
+		        }
+		    }
+	    System.out.println();
+}*/
+	
+/*			for(int i=0;i<=5;i++) {//--------------------------RIGHT TRIANGLE
+				for(int j=0;j<i;j++) {
+					System.out.print("*");
+				}
+				System.out.println();
+		}*/
+		/*for(int i=5;i>=0;i--) //-------------------------------INVERTED RIGHT TRIANGLE
+			for(int j=0;j<i;j++) {
+				System.out.print("*");
+			}
+			System.out.println();
+		}*/	
+		
+
+

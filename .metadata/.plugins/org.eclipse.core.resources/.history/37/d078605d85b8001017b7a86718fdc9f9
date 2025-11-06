@@ -1,0 +1,23 @@
+package interfa;
+
+public class theatre1 implements Malayalam{
+
+	@Override
+	public void Ayak() {
+		// TODO Auto-generated method stub
+		System.out.println("Ticket Price:250");
+	}
+
+	@Override
+	public void Premam() {
+		// TODO Auto-generated method stub
+		System.out.println("Ticket Price:150");
+	}
+
+	@Override
+	public void June() {
+		// TODO Auto-generated method stub
+		System.out.println("Ticket Price:300");
+	}
+
+}

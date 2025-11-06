@@ -1,0 +1,9 @@
+package interfa;
+
+public class Cus1 extends ICIC{
+		public static void main(String[] args) {
+			Cus1 c =new Cus1();
+			c.interestRate(10,000);
+			
+		}
+}

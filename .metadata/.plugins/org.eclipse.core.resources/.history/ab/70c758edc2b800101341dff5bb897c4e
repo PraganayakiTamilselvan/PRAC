@@ -1,0 +1,8 @@
+package com.example;
+
+public class Oops {
+	int h=2;
+			void program() {
+				System.out.println("HEllooooooo");
+			}
+}

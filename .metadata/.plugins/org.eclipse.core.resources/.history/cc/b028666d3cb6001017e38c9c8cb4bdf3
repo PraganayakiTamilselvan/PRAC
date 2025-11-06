@@ -1,0 +1,13 @@
+package PACK1;
+public class a {
+			int x=20000;
+			void bal(){
+				System.out.println("Account balance:"+ this.x );
+			}
+			public static void main(String[] args) {
+				a b =new a();
+				
+				
+			}
+
+}

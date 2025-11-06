@@ -1,0 +1,7 @@
+package interfa;
+
+public interface Tamil {
+public void Three();
+public void sms();
+public void Ghili();
+}

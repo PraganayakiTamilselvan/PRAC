@@ -1,0 +1,13 @@
+package PACK1;
+public class a {
+			a()
+			{
+				System.out.println("cat ");
+			}
+			void eat() {
+				System.out.println("Sleep");
+			}
+			public static void main(String[] args) {
+				new a().eat();
+			}
+}
