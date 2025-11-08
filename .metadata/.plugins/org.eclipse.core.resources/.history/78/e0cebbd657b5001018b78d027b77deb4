@@ -1,9 +1,0 @@
-package PACK1;
-
-public class a {
-	public static void main(String[] args) {
-		Cal b=new Cal();
-		System.out.println(b.power(3));
-	}
-	
-}

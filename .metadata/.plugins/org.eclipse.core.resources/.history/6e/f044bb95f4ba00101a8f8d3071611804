@@ -1,0 +1,21 @@
+package interfa;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Tm {
+    public static void main(String[] args) {
+        Map<Integer, String> t = new HashMap<>();
+        t.put(1, "Ap");
+        t.put(2, "Bc");
+
+        System.out.println(t.keySet());
+        System.out.println(t.values());
+
+        for (Map.Entry<Integer, String> entry : t.entrySet()) {
+            Integer key = entry.getKey();
+            String value = entry.getValue();
+            System.out.println("Key: " + key + ", Value: " + value);
+        }
+    }
+}

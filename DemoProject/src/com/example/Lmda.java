@@ -1,0 +1,16 @@
+package com.example;
+
+class Animal {}
+
+public class Lmda extends Animal {
+    public static void main(String[] args) {
+       Animal a = new Animal();
+
+        if (a instanceof Lmda) {
+            System.out.println("a is a Dog");
+        }
+        if (a instanceof Animal) { //CHECKS A IS THE INSTANCE OF ANIMAL --TRUE
+            System.out.println("a is an Animal");
+        }
+    }
+}

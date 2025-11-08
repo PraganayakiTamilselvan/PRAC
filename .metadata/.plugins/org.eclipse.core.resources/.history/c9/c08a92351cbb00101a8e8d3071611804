@@ -1,0 +1,14 @@
+package interfa;
+
+import java.util.HashMap;
+
+public class Hmap {
+public static void main(String[] args) {
+	HashMap h = new HashMap();
+	h.put(1, "Apple");
+	h.put(2, "Orange");
+	h.put(null, "Hello");
+	System.out.println(h.get(2));
+}
+
+}

@@ -1,0 +1,22 @@
+package com.example;
+
+import java.util.Scanner;
+
+public class User {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+
+        try {
+            if (a < 18) {
+                System.out.println("Valid Age");
+            } else {
+                throw new InvalidAgeException(a);
+            }
+        } catch (InvalidAgeException e) {
+            System.out.println(e); // or e.getMessage()
+        } finally {
+            System.out.println("I'm executed");
+        }
+    }
+}

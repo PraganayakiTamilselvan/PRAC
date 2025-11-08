@@ -1,8 +1,0 @@
-package PACK1.subpack;
-public class Ab{
-		public static void main(String[] args) {
-			
-		}
-	}
-
-	

@@ -1,0 +1,22 @@
+package interfa;
+public class Excep {
+	public static void main(String[] args) throws ArithmeticException{
+		try {
+			System.out.println(22/0);
+		}
+//			try {
+//				System.out.println(22/0);
+//			catch(Exception e) {
+//				System.out.println(e);
+//			}
+//		}
+	catch(Exception e) {
+			System.out.println(e);	
+			}
+
+		finally {
+			System.out.println("byee");
+		}
+		}
+	}
+

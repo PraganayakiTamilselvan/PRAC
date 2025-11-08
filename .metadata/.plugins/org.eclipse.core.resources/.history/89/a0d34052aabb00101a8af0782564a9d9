@@ -1,0 +1,18 @@
+package interfa;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Excep {
+		public void readFile(String fileName) throws FileNotFoundException  {
+		    FileReader reader = new FileReader(fileName); // Must handle IOException
+		}
+}
+//try {
+//System.out.println(22/0);
+//}
+//catch(Exception e) {
+//System.out.println(e);
+//}
+

@@ -1,0 +1,24 @@
+package com.example;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class Date {
+public static void main(String[] args) {
+	LocalDate ld = LocalDate.now();
+	System.out.println(ld);
+	System.out.println(ld.isAfter(ld));
+	System.out.println(ld.minusDays(8));
+	LocalTime l = LocalTime.now();
+	System.out.println(l);
+	System.out.println(l.getSecond());
+//	String str ="22/06/2025";
+//	SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/YYYY");
+//	Date d = sdf.parse(str);
+//	System.out.println(getDate());
+	
+	
+	
+			
+}
+}

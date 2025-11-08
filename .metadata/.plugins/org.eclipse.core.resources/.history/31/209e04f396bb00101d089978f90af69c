@@ -1,0 +1,14 @@
+package interfa;
+
+public class Excep {
+public static void main(String[] args) {
+	int n= 20;
+	int c=0;
+	try {
+		System.out.println(n/c);
+	}
+	catch(Exception e) {
+		System.out.println(e);
+	}
+}
+}

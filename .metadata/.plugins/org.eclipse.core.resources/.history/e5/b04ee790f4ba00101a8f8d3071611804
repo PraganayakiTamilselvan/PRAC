@@ -1,0 +1,30 @@
+package interfa;
+
+public class Mapdemo {
+	public static void main(String[] args) {
+		HashMap<Company,Employee> hm=new HashMap<Company,Employee>();
+		hm.put(new Company("UST", 101, "Trivandrum"), new Employee(101, "Karthik", 45000));
+		hm.put(new Company("TCS", 102, "Chennai"), new Employee(102, "Praveen", 55000));
+		hm.put(new Company("UST", 103, "Bangalore"), new Employee(103, "Vijay", 65000));
+		hm.put(new Company("TCS", 104, "Bangalore"), new Employee(104, "Pavan", 75000));
+		hm.put(new Company("Wipro", 105, "Chennai"), new Employee(105, "Gokul", 56000));
+		for(Map.Entry m:hm.entrySet())
+		{
+			Company cmp=(Company)m.getKey();
+			Employee emp=(Employee)m.getValue();
+			
+//			if(cmp.getCmpName().equals("UST"))
+//			{
+//				System.out.println(emp.getEmpname());
+//			}
+			if(emp.getEmpsal()>=70000)
+			{
+				System.out.println(emp.getEmpname());
+			}
+			
+		}
+		
+	}
+	}
+
+}

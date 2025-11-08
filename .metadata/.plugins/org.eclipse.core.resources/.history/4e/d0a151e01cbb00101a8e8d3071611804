@@ -1,0 +1,18 @@
+package interfa;
+
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+
+public class Hmap {
+public static void main(String[] args) {
+	LinkedHashMap h = new LinkedHashMap();
+	h.put(1, "Apple");
+	h.put(1, "Orange");
+	h.put(null, "Hello");
+	System.out.println(h.get(2));
+//	h.remove(1);
+	System.out.println(h.containsKey(2));
+	System.out.println(h);
+}
+
+}

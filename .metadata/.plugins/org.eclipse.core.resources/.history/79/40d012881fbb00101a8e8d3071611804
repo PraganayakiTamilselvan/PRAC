@@ -1,0 +1,21 @@
+package interfa;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Tm {
+	public static void main(String[] args) {
+		TreeMap t = new TreeMap();
+		t.put(1, "Ap");
+		t.put(2, "Bc");
+		t.keySet();
+		System.out.println(t.keySet());
+		System.out.println(t.values());
+		for(Map.entry(Integer, String):t.keySet()) {
+			
+		}
+		
+	}
+
+
+}

@@ -1,0 +1,21 @@
+package com.example;
+
+import java.util.Scanner;
+
+public class User {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	int a = sc.nextInt();
+	if(a<18) {
+		System.out.println("Valid Age");
+	}
+	else {
+		try {
+			throw new InvalidAgeException("Age must be less than 18 to be valid.");
+		}
+		finally {
+			System.out.println("Im executed");
+		}
+	}
+}
+}

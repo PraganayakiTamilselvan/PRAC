@@ -4,4 +4,7 @@
     <fullyQualifiedTypeName name="com.example.Main"/>
     <fullyQualifiedTypeName name="PACK1.Cal"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.time.LocalDate"/>
+    <fullyQualifiedTypeName name="java.time.LocalTime"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
 </qualifiedTypeNameHistroy>

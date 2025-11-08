@@ -1,0 +1,14 @@
+package interfa;
+
+import java.util.TreeMap;
+
+public class Tm {
+	public static void main(String[] args) {
+		TreeMap t = new TreeMap();
+		t.put(1, "Ap");
+		t.put(2, "Bc");
+		System.out.println(t);
+	}
+
+
+}
