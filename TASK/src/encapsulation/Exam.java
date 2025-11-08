@@ -1,0 +1,49 @@
+package encapsulation;
+//This program uses encapsulation to store exam details privately and access them safely using getter and setter methods.
+
+public class Exam {
+private String Subject;
+private int obtainedmark;
+public String getSubject() {
+	return Subject;
+}
+public void setSubject(String subject) {
+	Subject = subject;
+}
+public int getObtainedmark() {
+	return obtainedmark;
+}
+public void setObtainedmark(int obtainedmark) {
+	this.obtainedmark = obtainedmark;
+}
+
+@Override
+public String toString() {
+	return "Exam [Subject=" + Subject + ", obtainedmark=" + obtainedmark + ", getSubject()=" + getSubject()
+			+ ", getObtainedmark()=" + getObtainedmark() + ", getClass()=" + getClass() + ", hashCode()=" + hashCode()
+			+ ", toString()=" + super.toString() + "]";
+}
+public static void main(String[] args) {
+	 Exam e1 = new Exam();
+     e1.setSubject("Tamil");
+     e1.setObtainedmark(34);
+
+     Exam e2 = new Exam();
+     e2.setSubject("English");
+     e2.setObtainedmark(45);
+
+     Exam e3 = new Exam();
+     e3.setSubject("Mathematics");
+     e3.setObtainedmark(50);
+
+     Exam e4 = new Exam();
+     e4.setSubject("Science");
+     e4.setObtainedmark(42);
+
+     Exam e5 = new Exam();
+     e5.setSubject("Social Science");
+     e5.setObtainedmark(48);
+     System.out.println(e1.getSubject());
+     System.out.println(e5.getObtainedmark());
+}
+}

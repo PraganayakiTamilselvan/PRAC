@@ -1,0 +1,20 @@
+package com.ust.evs.dao;
+
+import java.util.ArrayList;
+import java.util.Map;
+
+import com.ust.evs.bean.*;
+
+import com.ust.evs.service.*;
+
+public class AdministratorDAO implements Administrator {
+
+	@Override
+	public String addElection(ElectionBean electionBean) {
+		// TODO Auto-generated method stub
+		
+		return null;
+	}
+
+	
+}

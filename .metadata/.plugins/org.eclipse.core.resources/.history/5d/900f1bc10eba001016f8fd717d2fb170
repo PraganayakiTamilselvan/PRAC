@@ -1,0 +1,28 @@
+package com.ust.evs.service;
+
+import com.ust.evs.bean.*;
+
+public class Adminimp implements Administrator {
+
+	@Override
+	public String addElection(ElectionBean electionBean) {
+		if (electionBean == null || electionBean.getElectionDate() == null) {
+	        return "ERROR";
+	    }
+		return "Success";
+	}
+	public static void main(String[] args) {
+		Adminimp a = new Adminimp();
+		 String result1 = a.addElection(null);
+	        System.out.println("Result with null input: " + result1);
+
+	        // Test with valid input
+	        ElectionBean election = new ElectionBean();
+	        election.setElectionID("E101");
+	        election.setElectionDate(new java.util.Date()); // Set today's date
+
+	        String result2 = a.addElection(election);
+	        System.out.println("Result with valid input: " + result2);
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.ust.evs.service;
+
+import com.ust.evs.bean.ElectionBean;
+
+public class Adminimp implements Administrator {
+
+	@Override
+	public String addElection(ElectionBean electionBean) {
+		if (electionBean == null || electionBean.getElectionID() == null) {
+	        return "ERROR";
+	    }
+		return "Success";
+	}
+
+}

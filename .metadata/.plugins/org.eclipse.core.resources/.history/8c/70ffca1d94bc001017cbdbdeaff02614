@@ -1,0 +1,13 @@
+package inface1;
+
+	public class Color extends Applee{ //EXTEND THE CLASS
+		public static void main(String[] args) {
+			Color c = new Color();
+			c.eat();
+			c.slice(); 
+			c.peel();
+			c.wash();
+		}
+
+	}
+}

@@ -1,0 +1,14 @@
+package inface4;
+
+abstract class Document implements Printable {
+	public String title;// TO STORE THE TITLE OF DOCUMENT
+	public Document(String title) {
+        this.title = title; // CONSTRUCTOR TO INITIALIZE THE TITLE 
+	}
+	
+	 public void open() {
+	        System.out.println("Opening document: " + title);
+	 }
+	 public abstract void format();	
+}
+

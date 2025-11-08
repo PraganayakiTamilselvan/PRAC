@@ -1,0 +1,24 @@
+package inface4;
+
+public class PdfDocument extends Document{
+	
+	    public PdfDocument(String title) {
+		super("MATHS NOTES");//GIVES VALUES TO THE SUPERCLASS CONSTRUCTOR
+	}
+		@Override
+		public void format() {
+	        System.out.println("Formatting PDF document: " + title);
+	    }
+
+	    @Override
+	    public void print() {
+	        System.out.println("Printing PDF document: " + title);
+	    }
+public static void main(String[] args) {
+	PdfDocument pdf = new PdfDocument("MyReport");
+    pdf.open();
+    pdf.format();
+    pdf.print();
+}
+
+}

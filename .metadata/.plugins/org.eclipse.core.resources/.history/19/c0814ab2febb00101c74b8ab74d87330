@@ -1,0 +1,59 @@
+package com.ust.evs.dao;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import com.ust.evs.bean.*;
+import com.ust.evs.service.*;
+public class AdministratorDAO implements Administrator {
+	 ArrayList<ElectionBean> electionList = new ArrayList<>();
+	 ArrayList<ElectionBean> upcoming = new ArrayList<>();
+	 ArrayList<ElectionBean> allelection = new ArrayList<>();
+	 ArrayList<PartyBean> addparty = new ArrayList<>();
+	 @Override
+	 public String addElection(ElectionBean electionBean) {
+		 try {
+		        if (electionBean == null || electionBean.getElectionID() == null || electionBean.getElectionID().isEmpty()) {
+		            return "FAIL";
+		        }
+		        electionList.add(electionBean);
+		        return "SUCCESS";
+		    } catch (Exception e) {
+		        return "ERROR";
+		    }
+	 }
+	 @Override
+	 public ArrayList<ElectionBean> viewAllUpcomingElections() {
+		
+		 LocalDate today = LocalDate.now(); //FETCHES CURRENT DATE IN THE SYSTEM
+		 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");//converting LocalDate to a readable string
+		 for (ElectionBean e : electionList) {
+			 try {
+				    LocalDate electionDate = LocalDate.parse(e.getElectionDate(), formatter);
+				    if (electionDate.isAfter(today)) {
+				        upcoming.add(e);
+				    }
+				} catch (Exception ex) {
+				    System.err.println("Invalid date format for election ID: " + e.getElectionID());
+				}
+		 }		 
+		return upcoming;
+	 }
+	 @Override
+	 public ArrayList<ElectionBean> viewElections() {
+		    return electionList;
+		}
+	 @Override
+	 public String addParty(PartyBean partyBean) {
+		 try {
+		        if (partyBean == null || partyBean.getPartyID() == null || partyBean.getPartyID().isEmpty()) {
+		            return "FAIL";
+		        }
+		        addparty.add(partyBean);
+		        return "SUCCESS";
+		    } catch (Exception e) {
+		        return "ERROR";
+		    }
+		return null;
+	 }
+
+}

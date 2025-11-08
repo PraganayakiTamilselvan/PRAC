@@ -1,0 +1,49 @@
+package encapsulation;
+
+public class Hotel {
+    private String Hotelname;
+    private int TableCount;
+    private double Price;
+
+    // Constructor that initializes all fields
+    public Hotel(String hotelname, int tableCount, double price) {
+        this.Hotelname = hotelname;
+        this.TableCount = tableCount;
+        this.Price = price;
+    }
+
+    // Getters and Setters
+    public String getHotelname() {
+        return Hotelname;
+    }
+
+    public void setHotelname(String hotelname) {
+        Hotelname = hotelname;
+    }
+
+    public int getTableCount() {
+        return TableCount;
+    }
+
+    public void setTableCount(int tableCount) {
+        TableCount = tableCount;
+    }
+
+    public double getPrice() {
+        return Price;
+    }
+
+    public void setPrice(double price) {
+        Price = price;
+    }
+    
+    // Main method to test the class
+    public static void main(String[] args) {
+        Hotel myHotel = new Hotel("Sunrise Inn", 20, 1500.0);
+        System.out.println(myHotel);
+
+        // Updating values
+        myHotel.setPrice(1800.0);
+        System.out.println("Updated Price: " + myHotel.getPrice());
+    }
+}

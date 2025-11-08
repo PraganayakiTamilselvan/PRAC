@@ -1,0 +1,6 @@
+package inface4;
+
+public interface Printable {
+	public void print(); //CREATED THE INTERFACE WITH TWO METHODS
+	public void format();
+}

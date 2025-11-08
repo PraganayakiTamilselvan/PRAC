@@ -1,0 +1,64 @@
+package com.lnt.evs.ui;
+import java.util.ArrayList;
+import javax.swing.JOptionPane;
+import com.ust.evs.bean.ElectionBean;
+import com.ust.evs.dao.AdministratorDAO;
+import com.ust.evs.service.Administrator;
+
+public class Login {
+    public static void main(String[] args) {
+    	String userId = JOptionPane.showInputDialog("Enter User ID:");
+    	String password = JOptionPane.showInputDialog("Enter Password:");
+    	Administrator admin = new AdministratorDAO();
+        switch (userId) {
+        case "AD-001":
+            if (password.equals("AD-001")) {
+                JOptionPane.showMessageDialog(null, "Welcome Admin AD-001");
+                //ELECTION DETAILS
+                String electionID = JOptionPane.showInputDialog("Enter Election ID:");
+                String name = JOptionPane.showInputDialog("Enter Election Name:");
+                String electionDate = JOptionPane.showInputDialog("Enter Election Date (yyyy-MM-dd):");
+                String district = JOptionPane.showInputDialog("Enter District:");
+                String constituency = JOptionPane.showInputDialog("Enter Constituency:");
+                String countingDate = JOptionPane.showInputDialog("Enter Counting Date (yyyy-MM-dd):");
+                //OBJECT CREATION 
+                ElectionBean electionBean = new ElectionBean(
+                        electionID, name, electionDate, district, constituency, countingDate
+                    );
+                String result = admin.addElection(electionBean);
+                if (result.equals("SUCCESS")) {
+                    JOptionPane.showMessageDialog(null, "Election added successfully!");
+                    // Print election details
+//                    StringBuilder details = new StringBuilder("Election Details:\n");
+//                    details.append("ID: ").append(electionBean.getElectionID()).append("\n");
+//                    details.append("Name: ").append(electionBean.getName()).append("\n");
+//                    details.append("Election Date: ").append(electionBean.getElectionDate()).append("\n");
+//                    details.append("District: ").append(electionBean.getDistrict()).append("\n");
+//                    details.append("Constituency: ").append(electionBean.getConstituency()).append("\n");
+//                    details.append("Counting Date: ").append(electionBean.getCountingDate());
+//                    JOptionPane.showMessageDialog(null, details.toString());
+                }
+                switch (result) {
+                case "FAIL":
+                    JOptionPane.showMessageDialog(null, "Invalid election data.");
+                    break;
+                case "ERROR":
+                    JOptionPane.showMessageDialog(null, "An error occurred while adding the election.");
+                    break;
+            }
+        } else {
+            JOptionPane.showMessageDialog(null, "Incorrect password for AD-001");
+        }
+        break;
+        case "AD-002":
+        	if (password.equals("AD-002")) {
+                JOptionPane.showMessageDialog(null, "Welcome Admin AD-002");
+                
+        	
+    default:
+        JOptionPane.showMessageDialog(null, "Invalid User ID");
+        break;
+}
+}
+}
+

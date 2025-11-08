@@ -1,0 +1,23 @@
+package com.lnt.evs.ui;
+import javax.swing.*;
+
+import com.ust.evs.bean.ElectionBean;
+import com.ust.evs.service.Administrator;
+public class AddElectionUI {
+	public void showAddElectionForm(Administrator admin) {
+		String 
+        String name = JOptionPane.showInputDialog("Enter Election Name:");
+        String state = JOptionPane.showInputDialog("Enter State:");
+        String date = JOptionPane.showInputDialog("Enter Election Date (YYYY-MM-DD):");
+        String constituency = JOptionPane.showInputDialog("Enter Constituency:");
+
+        ElectionBean election = new ElectionBean();
+        election.getElectionID();
+        election.getName();
+        election.getDistrict();
+        election.getConstituency();
+        election.getCountingDate();
+        String result = admin.addElection(election);
+        JOptionPane.showMessageDialog(null, "Add Election Result: " + result);
+    }
+}

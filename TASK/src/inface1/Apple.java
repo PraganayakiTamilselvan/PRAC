@@ -1,0 +1,31 @@
+package inface1;
+
+public class Apple implements Fruits{
+//IMPLEMENT THE INTERFACE TO THIS CLASS
+	@Override
+	public void wash() {
+		System.out.println("Washh");		
+	}
+
+	@Override
+	public void peel() {
+		System.out.println("Peel it");
+		
+	}
+
+	@Override
+	public void eat() {
+		System.out.println("Eat it");
+		
+	}
+	public void slice() {
+		System.out.println("Slice it");
+	}
+	public static void main(String[] args) {
+		Apple a =new Apple();
+		a.slice();
+		a.peel();
+		
+	}
+
+}

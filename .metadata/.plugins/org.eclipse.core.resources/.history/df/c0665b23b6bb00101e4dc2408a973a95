@@ -1,0 +1,74 @@
+package com.ust.evs.bean;
+public class ElectionBean {
+    private String electionID;
+    private String name;
+    private String electionDate;
+    private String district;
+    private String constituency;
+    private String countingDate;
+
+    public ElectionBean() {}
+
+    public ElectionBean(String electionID, String name, String electionDate, String district, String constituency, String countingDate) {
+        this.electionID = electionID;
+        this.name = name;
+        this.electionDate = electionDate;
+        this.district = district;
+        this.constituency = constituency;
+        this.countingDate = countingDate;
+    }
+
+	public String getElectionID() {
+		return electionID;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getElectionDate() {
+		return electionDate;
+	}
+
+	public String getDistrict() {
+		return district;
+	}
+
+	public String getConstituency() {
+		return constituency;
+	}
+
+	public String getCountingDate() {
+		return countingDate;
+	}
+
+	public void setElectionID(String electionID) {
+		this.electionID = electionID;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public void setElectionDate(String electionDate) {
+		this.electionDate = electionDate;
+	}
+
+	public void setDistrict(String district) {
+		this.district = district;
+	}
+
+	public void setConstituency(String constituency) {
+		this.constituency = constituency;
+	}
+
+	public void setCountingDate(String countingDate) {
+		this.countingDate = countingDate;
+	}
+
+	@Override
+	public String toString() {
+	        return "ElectionBean [electionID=" + electionID + ", name=" + name + ", electionDate=" + electionDate
+	                + ", district=" + district + ", constituency=" + constituency + ", countingDate=" + countingDate + "]";
+	    }   
+}

@@ -1,0 +1,8 @@
+package com.ust.evs.service;
+import com.ust.evs.bean.*;
+import java.util.*;
+public interface Administrator {
+	 String addElection(ElectionBean electionBean); //ADD THE ELECTION
+	 //ArrayList<ElectionBean> viewAllUpcomingElections(); //ELECTION SCHDULED IN FUTURE
+	 
+}

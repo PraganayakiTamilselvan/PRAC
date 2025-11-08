@@ -1,0 +1,29 @@
+package com.ust.evs.bean;
+public class ElectionBean {
+	public String electionID;
+    public String name;
+    public String electionDate;
+    private String district;
+    private String constituency;
+    private String countingDate;
+	public ElectionBean() {
+		
+	}	
+	public ElectionBean(String electionID, String name, String electionDate, String district, String constituency, String countingDate) {
+        this.electionID = electionID;
+        this.name = name;
+        this.electionDate = electionDate;
+        this.district = district;
+        this.constituency = constituency;
+        this.countingDate = countingDate;
+    }
+	public String toString() {
+	    return "ElectionBean [electionID=" + electionID + ", name=" + name + ", electionDate=" + electionDate
+	            + ", district=" + district + ", constituency=" + constituency + ", countingDate=" + countingDate + "]";
+	}
+	public Object getElectionID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	}
+

@@ -1,0 +1,10 @@
+package inabs;
+
+public class Main {
+    public static void main(String[] args) {
+        Circle c = new Circle(5.0, "blue");
+        c.draw();
+        System.out.println("Area: " + c.area());
+    }
+}
+

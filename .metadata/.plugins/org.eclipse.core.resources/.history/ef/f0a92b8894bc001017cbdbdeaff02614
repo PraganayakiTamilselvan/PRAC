@@ -1,0 +1,8 @@
+package inface1;
+
+//SIMPLE INTERFACE 
+public interface Fruit {
+public void wash();
+public void peel();
+public void eat();
+}

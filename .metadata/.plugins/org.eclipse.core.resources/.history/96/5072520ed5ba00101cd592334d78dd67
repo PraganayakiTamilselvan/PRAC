@@ -1,0 +1,50 @@
+package com.ust.evs.dao;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
+import java.util.Map;
+
+import javax.swing.JOptionPane;
+
+import com.ust.evs.bean.*;
+import com.ust.evs.service.*;
+public class AdministratorDAO implements Administrator {
+	 ArrayList<ElectionBean> electionList = new ArrayList<>();
+	@Override
+	public String addElection(ElectionBean electionBean) {
+		if (electionBean == null) {
+	        return "FAILURE"; // Null input
+	    }	
+        electionList.add(electionBean);
+        return "SUCCESS";
+	}
+	@Override
+	public ArrayList<ElectionBean> viewAllUpcomingElections() {
+		ArrayList<ElectionBean> upcoming = new ArrayList<>();
+	    LocalDate today = LocalDate.now();
+	    DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
+	    for (ElectionBean e : electionList) {
+	        LocalDate electionDate = LocalDate.parse(e.electionDate, formatter);
+	        if (electionDate.isAfter(today)) {
+	            upcoming.add(e);
+	        }
+	    }
+
+	    // Show results using JOptionPane
+	    if (upcoming.isEmpty()) {
+	        JOptionPane.showMessageDialog( null,"No upcoming elections found.");
+	    } else {
+	        StringBuilder message = new StringBuilder("Upcoming Elections:\n");
+	        for (ElectionBean e : upcoming) {
+	        	message.append("ID: ").append(e.electionID)
+	            .append(", Name: ").append(e.name)
+	            .append(", Date: ").append(e.electionDate)
+	            .append("\n");
+
+	        }
+	        JOptionPane.showMessageDialog(null,message.toString());
+	    }
+		return upcoming;
+	}	
+}

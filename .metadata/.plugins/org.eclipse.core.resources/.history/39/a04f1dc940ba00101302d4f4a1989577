@@ -1,0 +1,25 @@
+package com.ust.evs.dao;
+import java.util.ArrayList;
+import java.util.Map;
+
+import javax.swing.JOptionPane;
+
+import com.ust.evs.bean.*;
+import com.ust.evs.service.*;
+public class AdministratorDAO implements Administrator {
+	 ArrayList<ElectionBean> electionList = new ArrayList<>();
+	@Override
+	public String addElection(ElectionBean electionBean) {
+		
+		String electionID = JOptionPane.showInputDialog("Enter Election ID:");
+        String name = JOptionPane.showInputDialog("Enter Election Name:");
+        String electionDate = JOptionPane.showInputDialog("Enter Election Date (YYYY-MM-DD):");
+        String district = JOptionPane.showInputDialog("Enter District:");
+        String constituency = JOptionPane.showInputDialog("Enter constituency");
+        String countingDate = JOptionPane.showInputDialog("Enter the counting date");	
+        electionList.add(electionBean);
+        return "SUCCESS";
+	}
+
+	
+}
